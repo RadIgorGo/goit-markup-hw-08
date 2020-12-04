@@ -1,0 +1,33 @@
+.list-nav,
+.list-app,
+.table-app {
+  padding: 0px;
+}
+.list-menu {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.list-nav .nav-item:not(:last-child),
+.up-contacts:not(:last-child) {
+  margin-right: 50px;
+}
+.list-menu,
+.list-app,
+.table-app {
+  margin: auto;
+}
+.list-nav {
+  margin-left: 93px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.list,
+.list-menu,
+.list-nav,
+.list-app,
+.table-app {
+  list-style: none;
+}

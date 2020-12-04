@@ -1,0 +1,24 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include fonts-logo(26px, 700, 1.1738);
+  font-style: normal;
+  color: $accent-cl;
+}
+
+.part-logo1 {
+  color: $title-cl;
+}
+.part-logo2 {
+  color: $white;
+}
+.link-logo {
+  text-decoration: none;
+}
+.logo,
+.link-logo,
+.part-logo1 {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-items: center;
+}

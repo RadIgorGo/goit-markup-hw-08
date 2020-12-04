@@ -1,0 +1,19 @@
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: auto;
+  background-color: $white;
+}
+
+.block-clients {
+  display: flex;
+  justify-content: space-between;
+}
+.unit-clients {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $svg-smoke;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

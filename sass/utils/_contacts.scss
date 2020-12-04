@@ -1,0 +1,27 @@
+.our-contacts {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: auto;
+  margin-left: 70px;
+}
+.our-contacts .little-name {
+  color: $white;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.call-us {
+  display: flex;
+
+  height: 44px;
+  width: 206px;
+}
+.call-us .pos-social {
+  background-color: rgba(255, 255, 255, 0.1);
+  &:hover,
+  &:focus {
+    background-color: $accent-cl;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}

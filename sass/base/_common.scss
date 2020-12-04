@@ -1,0 +1,196 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  @include fonts(15px, 1.7142, 0.03em);
+  color: $main-text-cl;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  @include fonts-title(44px, 900, 1.3636, 0.06em);
+  text-align: center;
+
+  color: $white;
+  height: 120px;
+  width: 696px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.little-name,
+.label {
+  font-family: "Roboto", sans-serif;
+  @include fonts-little(14px, 700, 1.1721, 0.03em);
+  font-style: normal;
+}
+.little-name {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: auto;
+
+  color: $title-cl;
+}
+.label {
+  text-transform: uppercase;
+  color: $white;
+}
+.sub-title {
+  font-family: "Roboto", sans-serif;
+  @include fonts-sub-title(36px, 700, 1.1719, 0.03em);
+  text-align: center;
+  color: $title-cl;
+}
+
+.styles-name {
+  font-family: "Roboto", sans-serif;
+  @include fonts-styles-name(16px, 500, 1.19, 0.03em);
+  color: $title-cl;
+}
+
+.invisible {
+  display: none;
+}
+
+.name-prof {
+  font-family: "Roboto", sans-serif;
+  @include fonts-name-prof(16px, 400, 1.19, 0.03em);
+  color: $main-text-cl;
+}
+
+.address {
+  font-family: "Roboto", sans-serif;
+  @include fonts-address(14px, 400, 1.71, 0.03em);
+}
+.cl-link {
+  color: #ffffff99;
+}
+
+.project-name {
+  font-family: "Roboto", sans-serif;
+  @include fonts-project-name(18px, 700, 2, 0.06em);
+  color: $title-cl;
+}
+
+.app-name {
+  font-family: "Roboto", sans-serif;
+  @include fonts-app-name(16px, 400, 1.87, 0.03em);
+
+  color: $main-text-cl;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 81px;
+  width: 231px;
+  margin-top: 20px;
+  padding-left: 0px;
+}
+.list-app {
+  background-color: $white;
+
+  display: flex;
+  background-color: $smoke;
+  justify-content: space-between;
+}
+
+.link:not(:last-child) {
+  margin-right: 30px;
+}
+.link-menu {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.up-contacts {
+  align-content: center;
+  margin-left: auto;
+}
+
+.break {
+  margin: auto;
+}
+
+.description-unit {
+  width: 270px;
+  height: 251px;
+}
+.description-job {
+  display: flex;
+  flex-direction: row;
+}
+.description-unit + .description-unit {
+  margin-left: 30px;
+}
+.desc-name {
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.sub-title {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.list-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person-photo {
+  display: block;
+  text-align: center;
+  background-color: $white;
+}
+
+.styles-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+.name-prof {
+  padding-bottom: 16px;
+  margin: auto;
+}
+
+.our-address {
+  display: inline-block;
+  margin-top: 0;
+}
+.cl-link {
+  padding-top: 9px;
+}
+.table-color {
+  color: $white;
+}
+.list-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.project-name {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 24px;
+  border-left: 1px solid#eeeeee;
+  border-right: 1px solid #eeeeee;
+  margin: auto;
+}
+.app-name {
+  padding-left: 24px;
+  margin: auto;
+  padding-bottom: 19px;
+  border-left: 1px solid#eeeeee;
+  border-right: 1px solid #eeeeee;
+}

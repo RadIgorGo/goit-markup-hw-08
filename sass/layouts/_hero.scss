@@ -1,0 +1,44 @@
+.bg-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/img.jpg");
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
+}
+.big-button {
+  display: block;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.pearl-wall {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $white;
+}
+.photo-book {
+  padding-bottom: 94px;
+  background-color: $white;
+}
+.label-img {
+  position: relative;
+  z-index: 1;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(47, 48, 58, 0.8);
+}

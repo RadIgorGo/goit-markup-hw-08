@@ -1,0 +1,38 @@
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.link-menu,
+.link,
+.bt-main,
+.bt-email,
+.pos-social,
+.instagram-svg,
+.instagram-svg1,
+.twitter-svg,
+.twitter-svg1,
+.linkedin-svg,
+.linkedin-svg1,
+.unit-clients,
+.svg-client1,
+.svg-client2,
+.svg-client3,
+.svg-client4,
+.svg-client5,
+.svg-client6,
+.bt-works,
+.flex-element,
+.bt-close,
+.bt-modal,
+.send {
+  transition: $time-transition $timing-function;
+}

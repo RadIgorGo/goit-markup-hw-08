@@ -1,0 +1,14 @@
+.bg-header {
+  background-color: $white;
+  border-bottom: 1px solid #ececec;
+}
+.head-main {
+  height: auto;
+  align-items: center;
+}
+.list-nav,
+.up-contacts,
+.menu-header,
+.head-main {
+  display: flex;
+}

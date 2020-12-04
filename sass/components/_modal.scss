@@ -1,0 +1,193 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: $time-transition $timing-function;
+  animation-name: changeBgColor;
+}
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 581px;
+  width: 528px;
+  border-radius: 4px;
+  background-color: $white;
+
+  transition: $time-transition $timing-function;
+}
+
+.close:hover {
+  fill: $accent-cl;
+}
+.modal-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.01em;
+  color: $main-text-cl;
+  display: block;
+
+  margin-top: auto;
+  margin-bottom: 4px;
+}
+
+.modal-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  display: block;
+  margin-top: 40px;
+
+  color: $title-cl;
+}
+.form-input {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.input-name,
+.input-tel,
+.input-email,
+.input-text {
+  display: block;
+  margin-bottom: 10px;
+  width: 448px;
+  height: 40px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  padding-right: 16px;
+  transition: $time-transition $timing-function;
+}
+.comments {
+  width: 448px;
+  height: 120px;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  transition: $time-transition $timing-function;
+}
+.comments::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1428;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.pos-contact {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 12px;
+}
+.contact-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: $main-text-cl;
+}
+.link-contract {
+  display: inline-block;
+  line-height: 0.8;
+  margin-left: 4px;
+  color: $accent-cl;
+  text-decoration: none;
+  border-bottom: 1px solid $accent-cl;
+}
+
+.icon-pos {
+  position: relative;
+}
+.table-icon {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transition: $time-transition $timing-function;
+}
+
+.input-name:focus,
+.input-tel:focus,
+.input-email:focus,
+.comments:focus {
+  border-radius: 4px;
+  outline-color: $accent-cl;
+}
+.input-name:focus + .table-icon,
+.input-tel:focus + .table-icon,
+.input-email:focus + .table-icon {
+  fill: $accent-cl;
+}
+.check-empty,
+.check-full {
+  height: 15px;
+  width: 16px;
+  position: absolute;
+  transition: $time-transition $timing-function;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+.check {
+  position: relative;
+  height: 15px;
+  width: 16px;
+}
+.check:checked ~ .check-empty {
+  opacity: 0;
+}
+.check:checked ~ .check-full {
+  opacity: 1;
+  pointer-events: none;
+}
+.check-empty {
+  background-color: $white;
+  pointer-events: none;
+}
+.check-full {
+  opacity: 0;
+  pointer-events: none;
+}
+.contact-text {
+  padding-left: 8px;
+}
