@@ -14,17 +14,59 @@ body {
 
 .title {
   font-family: "Roboto", sans-serif;
-  @include fonts-title(44px, 900, 1.3636, 0.06em);
+  @include fonts-title(44px, 900, 1.6154, 0.06em);
   text-align: center;
-
-  color: $white;
-  height: 120px;
   width: 696px;
-  margin-top: auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+
   margin-left: auto;
   margin-right: auto;
+  color: $white;
+
   text-transform: uppercase;
-  margin-bottom: 30px;
+  @media screen and (min-width: 0px) and (max-width: 385px) {
+    @include fonts-title(22px, 900, 1.6154, 0.06em);
+    width: 310px;
+    padding-top: calc(26.2%);
+    padding-bottom: calc(6.7%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 385px) and (max-width: 480px) {
+    @include fonts-title(26px, 900, 1.6154, 0.06em);
+    width: 360px;
+    padding-top: calc(26.2%);
+    padding-bottom: calc(6.7%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @include fonts-title(26px, 900, 1.6154, 0.06em);
+    width: 360px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    @include fonts-title(44px, 900, 1.3636, 0.06em);
+
+    width: 696px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .little-name,
@@ -35,8 +77,6 @@ body {
 }
 .little-name {
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: auto;
 
   color: $title-cl;
 }
@@ -47,7 +87,7 @@ body {
 .sub-title {
   font-family: "Roboto", sans-serif;
   @include fonts-sub-title(36px, 700, 1.1719, 0.03em);
-  text-align: center;
+
   color: $title-cl;
 }
 
@@ -89,108 +129,63 @@ body {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  height: 81px;
-  width: 231px;
-  margin-top: 20px;
-  padding-left: 0px;
 }
 .list-app {
   background-color: $white;
 
-  display: flex;
   background-color: $smoke;
-  justify-content: space-between;
 }
 
 .link:not(:last-child) {
-  margin-right: 30px;
 }
 .link-menu {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .up-contacts {
-  align-content: center;
-  margin-left: auto;
 }
 
 .break {
-  margin: auto;
 }
 
 .description-unit {
-  width: 270px;
-  height: 251px;
 }
 .description-job {
-  display: flex;
-  flex-direction: row;
 }
 .description-unit + .description-unit {
-  margin-left: 30px;
 }
 .desc-name {
-  margin-top: 10px;
-  margin-bottom: auto;
 }
 
 .sub-title {
-  margin-top: auto;
-  margin-bottom: 50px;
 }
 
 .list-image {
-  display: flex;
-  justify-content: space-between;
 }
 
 .person-photo {
-  display: block;
-  text-align: center;
   background-color: $white;
 }
 
 .styles-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin: auto;
 }
 .name-prof {
-  padding-bottom: 16px;
-  margin: auto;
 }
 
 .our-address {
-  display: inline-block;
-  margin-top: 0;
 }
 .cl-link {
-  padding-top: 9px;
 }
 .table-color {
   color: $white;
 }
 .list-menu {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
 }
 
 .project-name {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
   border-left: 1px solid#eeeeee;
   border-right: 1px solid #eeeeee;
-  margin: auto;
 }
 .app-name {
-  padding-left: 24px;
-  margin: auto;
-  padding-bottom: 19px;
   border-left: 1px solid#eeeeee;
   border-right: 1px solid #eeeeee;
 }

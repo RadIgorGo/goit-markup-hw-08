@@ -1,25 +1,50 @@
 .bg-hero {
+  background-color: $gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto auto;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/img.jpg");
-  background-color: $gray;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto auto;
-  background-size: cover;
+
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    background-size: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images-mobile/headerimg.jpg");
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images-mobile/headerimg.jpg");
+  }
 }
 .big-button {
   display: block;
   text-align: center;
-  padding-top: 200px;
+  align-content: center;
   padding-bottom: 200px;
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    padding-bottom: calc(24.5%);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-bottom: calc(15.4%);
+  }
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    padding-bottom: calc(16.7%);
+  }
 }
 .pearl-wall {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $white;
 }
 .photo-book {
@@ -31,11 +56,8 @@
   z-index: 1;
 }
 .label {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 370px;
-  height: 70px;
+
   position: absolute;
   left: 0;
   bottom: 0;

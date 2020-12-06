@@ -1,9 +1,7 @@
 .flex-element {
-  margin-bottom: 30px;
   border-bottom: 1px solid #eeeeee;
 }
 .flex-element:nth-child(n + 7) {
-  margin-bottom: auto;
 }
 .flex-element:hover,
 .flex-element:focus {
@@ -20,13 +18,7 @@
   @include fonts-overlay(18px, 400, 1.555, 0.03em);
   text-align: left;
   background: rgba(33, 150, 243, 0.9);
-  display: inherit;
-  height: 294px;
-  width: 370px;
-  display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-radius: 0px;
+
   align-items: center;
   position: absolute;
   z-index: 2;
