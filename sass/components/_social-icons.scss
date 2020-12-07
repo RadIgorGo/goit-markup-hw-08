@@ -23,11 +23,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 270px;
 
+  margin-bottom: 30px;
   background-color: $smoke;
   border-radius: 4px;
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    max-height: 80px;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 480px) {
+    height: 120px;
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 120px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 120px;
+    width: 270px;
+  }
 }
 .des-svg {
   height: 70px;

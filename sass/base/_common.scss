@@ -26,27 +26,13 @@ body {
   color: $white;
 
   text-transform: uppercase;
-  @media screen and (min-width: 0px) and (max-width: 385px) {
-    @include fonts-title(22px, 900, 1.6154, 0.06em);
-    width: 310px;
-    padding-top: calc(26.2%);
-    padding-bottom: calc(6.7%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    @include fonts-title(18px, 700, 1.6154, 0.06em);
+    width: auto;
+    padding-top: auto;
+    margin: 0px;
   }
-  @media screen and (min-width: 385px) and (max-width: 480px) {
-    @include fonts-title(26px, 900, 1.6154, 0.06em);
-    width: 360px;
-    padding-top: calc(26.2%);
-    padding-bottom: calc(6.7%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) {
     @include fonts-title(26px, 900, 1.6154, 0.06em);
     width: 360px;
     padding-top: 118px;
@@ -56,7 +42,17 @@ body {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    @include fonts-title(26px, 900, 1.6154, 0.06em);
+    width: 360px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
     @include fonts-title(44px, 900, 1.3636, 0.06em);
 
     width: 696px;
@@ -64,7 +60,6 @@ body {
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
     margin-bottom: 0px;
   }
 }
@@ -77,8 +72,8 @@ body {
 }
 .little-name {
   text-transform: uppercase;
-
   color: $title-cl;
+  margin: 0px;
 }
 .label {
   text-transform: uppercase;
@@ -148,12 +143,53 @@ body {
 }
 
 .description-unit {
+  height: 251px;
+  width: 270px;
+
+  // @media screen and (min-width: 0px) and (max-width: 479px) {
+  //   max-height: 226px;
+  //   max-width: 450px;
+  // }
+  @media screen and (min-width: 480px) {
+    height: 226px;
+    width: 450px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    height: 251px;
+    width: 354px;
+    display: inline-block;
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 251px;
+    width: 270px;
+  }
 }
 .description-job {
 }
 .description-unit + .description-unit {
 }
 .desc-name {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  max-height: 75px;
+  max-width: 270px;
+
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    max-height: 150px;
+    max-width: 450px;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    max-width: 354px;
+    max-height: 75px;
+  }
 }
 
 .sub-title {

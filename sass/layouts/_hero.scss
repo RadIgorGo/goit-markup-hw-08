@@ -11,8 +11,8 @@
     ),
     url("../images/img.jpg");
 
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    background-size: auto;
+  @media screen and (min-width: 480px) {
+    background-position: 0% 0%;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -20,7 +20,7 @@
       ),
       url("../images-mobile/headerimg.jpg");
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -32,23 +32,38 @@
 .big-button {
   display: block;
   text-align: center;
-  align-content: center;
-  padding-bottom: 200px;
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    padding-bottom: calc(24.5%);
+
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    padding-bottom: 20%;
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    padding-bottom: calc(15.4%);
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 118px;
   }
-  @media screen and (min-width: 769px) and (max-width: 1200px) {
-    padding-bottom: calc(16.7%);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
   }
 }
 .pearl-wall {
   background-color: $white;
+
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .photo-book {
-  padding-bottom: 94px;
   background-color: $white;
 }
 .label-img {

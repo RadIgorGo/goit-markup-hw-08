@@ -335,39 +335,19 @@ body {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 0px) and (max-width: 385px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
   .title {
-    font-size: 22px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 1.6154;
     letter-spacing: 0.06em;
-    width: 310px;
-    padding-top: calc(26.2%);
-    padding-bottom: calc(6.7%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: auto;
+    padding-top: auto;
+    margin: 0px;
   }
 }
 
-@media screen and (min-width: 385px) and (max-width: 480px) {
-  .title {
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.6154;
-    letter-spacing: 0.06em;
-    width: 360px;
-    padding-top: calc(26.2%);
-    padding-bottom: calc(6.7%);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .title {
     font-size: 26px;
     font-weight: 900;
@@ -383,7 +363,23 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6154;
+    letter-spacing: 0.06em;
+    width: 360px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 44px;
     font-weight: 900;
@@ -394,7 +390,6 @@ body {
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
     margin-bottom: 0px;
   }
 }
@@ -412,6 +407,7 @@ body {
 .little-name {
   text-transform: uppercase;
   color: #212121;
+  margin: 0px;
 }
 
 .label {
@@ -483,6 +479,61 @@ body {
 .list-app {
   background-color: #ffffff;
   background-color: #f5f4fa;
+}
+
+.description-unit {
+  height: 251px;
+  width: 270px;
+}
+
+@media screen and (min-width: 480px) {
+  .description-unit {
+    height: 226px;
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  .description-unit:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-unit {
+    height: 251px;
+    width: 354px;
+    display: inline-block;
+  }
+  .description-unit:nth-child(2n) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-unit {
+    height: 251px;
+    width: 270px;
+  }
+}
+
+.desc-name {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  max-height: 75px;
+  max-width: 270px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .desc-name {
+    max-height: 150px;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .desc-name {
+    max-width: 354px;
+    max-height: 75px;
+  }
 }
 
 .person-photo {
@@ -674,10 +725,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 270px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .bg-svg {
+    max-height: 80px;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .bg-svg {
+    height: 120px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-svg {
+    height: 120px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg-svg {
+    height: 120px;
+    width: 270px;
+  }
 }
 
 .des-svg {
@@ -918,19 +996,19 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 0px) and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
