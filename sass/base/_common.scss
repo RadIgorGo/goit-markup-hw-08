@@ -134,10 +134,21 @@ body {
 .little-name {
   display: block;
 }
-.description-unit {
-  @media screen and (max-width: 479px) {
-  }
+.description-job {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 507px;
+    width: 738px;
 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 251px;
+    width: 1170px;
+    display: flex;
+  }
+}
+.description-unit {
   @media screen and (min-width: 480px) {
     height: 226px;
     width: 450px;
@@ -153,10 +164,8 @@ body {
     display: inline-block;
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
-      background-color: orange;
     }
     &:nth-child(2n) {
-      background-color: orange;
       margin-left: 25px;
     }
   }
@@ -193,7 +202,10 @@ body {
     width: 270px;
   }
 }
-
+.sub-title {
+  text-align: center;
+  margin: 0px;
+}
 .person-photo {
   background-color: $white;
 }

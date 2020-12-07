@@ -63,8 +63,17 @@
     padding-bottom: 94px;
   }
 }
+// .list-image {
+
+// }
 .photo-book {
+  height: 386px;
+  width: 1170px;
+
   background-color: $white;
+  @media screen and (min-width: 0px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 .label-img {
   position: relative;

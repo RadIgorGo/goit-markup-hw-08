@@ -488,6 +488,23 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .description-job {
+    height: 507px;
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-job {
+    height: 251px;
+    width: 1170px;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .description-unit {
     height: 226px;
@@ -508,10 +525,8 @@ body {
   }
   .description-unit:nth-child(-n + 2) {
     margin-bottom: 30px;
-    background-color: orange;
   }
   .description-unit:nth-child(2n) {
-    background-color: orange;
     margin-left: 25px;
   }
 }
@@ -553,6 +568,11 @@ body {
     height: 75px;
     width: 270px;
   }
+}
+
+.sub-title {
+  text-align: center;
+  margin: 0px;
 }
 
 .person-photo {
@@ -1362,7 +1382,15 @@ img {
 }
 
 .photo-book {
+  height: 386px;
+  width: 1170px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  .photo-book {
+    display: none;
+  }
 }
 
 .label-img {
