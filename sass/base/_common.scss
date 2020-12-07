@@ -102,7 +102,8 @@ body {
   color: $main-text-cl;
 }
 
-.address {
+.address,
+.desc-name {
   font-family: "Roboto", sans-serif;
   @include fonts-address(14px, 400, 1.71, 0.03em);
 }
@@ -123,98 +124,82 @@ body {
   color: $main-text-cl;
 }
 
-.list {
-}
 .list-app {
   background-color: $white;
 
   background-color: $smoke;
 }
-
-.link:not(:last-child) {
+.des-svg,
+.bg-svg,
+.little-name {
+  display: block;
 }
-.link-menu {
-}
-
-.up-contacts {
-}
-
-.break {
-}
-
 .description-unit {
-  height: 251px;
-  width: 270px;
+  @media screen and (max-width: 479px) {
+  }
 
-  // @media screen and (min-width: 0px) and (max-width: 479px) {
-  //   max-height: 226px;
-  //   max-width: 450px;
-  // }
   @media screen and (min-width: 480px) {
     height: 226px;
     width: 450px;
     margin-bottom: 30px;
-    &:last-child {
+    &:nth-child(4) {
       margin-bottom: 0px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     height: 251px;
     width: 354px;
+    margin-bottom: 0px;
     display: inline-block;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+      background-color: orange;
+    }
     &:nth-child(2n) {
-      margin-right: 30px;
+      background-color: orange;
+      margin-left: 25px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     height: 251px;
     width: 270px;
+    display: inline-block;
+    margin-right: 30px;
+
+    &:nth-child(n + 4) {
+      margin-right: 0px;
+    }
   }
 }
-.description-job {
-}
-.description-unit + .description-unit {
-}
+
 .desc-name {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  max-height: 75px;
-  max-width: 270px;
-
-  @media screen and (min-width: 0px) and (max-width: 480px) {
-    max-height: 150px;
-    max-width: 450px;
+  display: block;
+  padding-top: 10px;
+  margin: 0;
+  @media screen and (max-width: 479px) {
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    max-width: 354px;
-    max-height: 75px;
+  @media screen and (min-width: 480px) {
+    height: 50px;
+    width: 450px;
   }
-}
 
-.sub-title {
-}
-
-.list-image {
+  @media screen and (min-width: 768px) {
+    height: 75px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 75px;
+    width: 270px;
+  }
 }
 
 .person-photo {
   background-color: $white;
 }
 
-.styles-name {
-}
-.name-prof {
-}
-
-.our-address {
-}
-.cl-link {
-}
 .table-color {
   color: $white;
-}
-.list-menu {
 }
 
 .project-name {
