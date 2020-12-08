@@ -477,11 +477,6 @@ body {
   color: #757575;
 }
 
-.list-app {
-  background-color: #ffffff;
-  background-color: #f5f4fa;
-}
-
 .des-svg,
 .bg-svg,
 .little-name {
@@ -837,7 +832,7 @@ body {
 .twitter-svg1,
 .facebook-svg1,
 .linkedin-svg1 {
-  height: 50px;
+  height: 20px;
   width: 20px;
   margin: auto;
 }
@@ -967,10 +962,40 @@ body {
 }
 
 .pos-social {
-  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
+}
+
+.list-app {
+  display: flex;
+  background-color: var(--smoke);
+  justify-content: space-between;
+}
+
+.person-photo {
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .person-photo {
+    height: 622px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .person-photo {
+    height: 536px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .person-photo {
+    height: 428px;
+    width: 270px;
+  }
 }
 
 .link-menu {

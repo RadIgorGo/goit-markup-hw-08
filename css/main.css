@@ -47,7 +47,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /*
@@ -92,7 +93,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -273,7 +275,16 @@ summary {
   font-weight: 400;
   src: url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.svg#Roboto") format("svg");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff2")
+      format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.ttf")
+      format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-regular.svg#Roboto")
+      format("svg");
 }
 
 @font-face {
@@ -281,7 +292,14 @@ summary {
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/roboto/roboto-v20-latin_cyrillic-500.eot");
-  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto/roboto-v20-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-500.svg#Roboto") format("svg");
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-500.svg#Roboto")
+      format("svg");
 }
 
 @font-face {
@@ -289,7 +307,14 @@ summary {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/roboto/roboto-v20-latin_cyrillic-700.eot");
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("../fonts/roboto/roboto-v20-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-700.svg#Roboto") format("svg");
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-700.svg#Roboto")
+      format("svg");
 }
 
 @font-face {
@@ -297,7 +322,14 @@ summary {
   font-style: normal;
   font-weight: 900;
   src: url("../fonts/roboto/roboto-v20-latin_cyrillic-900.eot");
-  src: local("Roboto Black"), local("Roboto-Black"), url("../fonts/roboto/roboto-v20-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin_cyrillic-900.svg#Roboto") format("svg");
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.woff") format("woff"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.ttf") format("truetype"),
+    url("../fonts/roboto/roboto-v20-latin_cyrillic-900.svg#Roboto")
+      format("svg");
 }
 
 html {
@@ -655,7 +687,8 @@ body {
   border: none;
 }
 
-.bt-works:hover, .bt-works:focus {
+.bt-works:hover,
+.bt-works:focus {
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
@@ -671,7 +704,8 @@ body {
   color: #ffffff;
 }
 
-.bt-email:hover, .bt-email:focus {
+.bt-email:hover,
+.bt-email:focus {
   color: #2196f3;
   background-color: #ffffff;
   cursor: pointer;
@@ -725,7 +759,8 @@ body {
   background-color: #ffffff;
 }
 
-.bt-close:hover, .bt-close:focus {
+.bt-close:hover,
+.bt-close:focus {
   cursor: pointer;
 }
 
@@ -976,7 +1011,8 @@ body {
 }
 
 .person-photo {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -1201,7 +1237,8 @@ body {
   position: relative;
 }
 
-.link-menu:hover, .link-menu:focus {
+.link-menu:hover,
+.link-menu:focus {
   color: #2196f3;
 }
 
@@ -1219,7 +1256,8 @@ body {
   align-items: center;
 }
 
-.link:hover, .link:focus {
+.link:hover,
+.link:focus {
   color: #2196f3;
 }
 
@@ -1237,7 +1275,8 @@ body {
   align-items: center;
 }
 
-.link-address:hover, .link-address:focus {
+.link-address:hover,
+.link-address:focus {
   color: #2196f3;
 }
 
@@ -1338,19 +1377,34 @@ img {
   background-position: center;
   background-size: auto auto;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/img.jpg");
 }
 
 @media screen and (min-width: 480px) {
   .bg-hero {
     background-position: 0% 0%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-mobile/headerimg.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images-mobile/headerimg.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-mobile/headerimg.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images-mobile/headerimg.jpg");
   }
 }
 
@@ -1505,7 +1559,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.call-us .pos-social:hover, .call-us .pos-social:focus {
+.call-us .pos-social:hover,
+.call-us .pos-social:focus {
   background-color: #2196f3;
 }
 
@@ -1516,7 +1571,8 @@ img {
 .flex-element:hover,
 .flex-element:focus {
   cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product {
