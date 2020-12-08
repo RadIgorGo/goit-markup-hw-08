@@ -567,6 +567,15 @@ body {
 
 .sub-title {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .sub-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -956,25 +965,39 @@ body {
 .social-group {
   display: flex;
   justify-content: space-between;
-  margin-right: 35px;
-  margin-left: 35px;
-  padding-bottom: 30px;
+  height: 44px;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .social-group {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-group {
+    margin-bottom: 30px;
+  }
 }
 
 .pos-social {
+  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
 }
 
 .list-app {
-  display: flex;
+  padding-left: 0px;
   background-color: var(--smoke);
-  justify-content: space-between;
 }
 
 .person-photo {
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {

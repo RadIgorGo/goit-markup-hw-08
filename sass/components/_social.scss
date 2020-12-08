@@ -1,22 +1,32 @@
 .social-group {
   display: flex;
   justify-content: space-between;
-  margin-right: 35px;
-  margin-left: 35px;
-  padding-bottom: 30px;
+  height: 44px;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 .pos-social {
+  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
 }
 .list-app {
-  display: flex;
+  padding-left: 0px;
+  // display: flex;
+  // justify-content: space-between;
   background-color: var(--smoke);
-  justify-content: space-between;
 }
 .person-photo {
   background-color: $white;
+  overflow: hidden;
   @media screen and (min-width: 480px) {
     height: 622px;
     width: 450px;

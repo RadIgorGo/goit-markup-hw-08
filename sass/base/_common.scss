@@ -199,9 +199,11 @@ body {
 }
 .sub-title {
   text-align: center;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
