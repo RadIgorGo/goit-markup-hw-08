@@ -204,10 +204,29 @@ body {
 }
 .sub-title {
   text-align: center;
-  margin: 0px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 .person-photo {
   background-color: $white;
+  @media screen and (min-width: 480px) {
+    height: 622px;
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 536px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 428px;
+    width: 270px;
+  }
 }
 
 .table-color {

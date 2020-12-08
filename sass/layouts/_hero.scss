@@ -63,25 +63,33 @@
     padding-bottom: 94px;
   }
 }
-// .list-image {
-
-// }
+.list-image {
+  display: flex;
+  justify-content: space-between;
+}
 .photo-book {
   height: 386px;
-  width: 1170px;
-
+  width: 1200px;
+  margin-bottom: 94px;
   background-color: $white;
   @media screen and (min-width: 0px) and (max-width: 1199px) {
     display: none;
   }
 }
 .label-img {
+  display: flex;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 .label {
+  display: flex;
+  justify-content: center;
   align-items: center;
-
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  width: 370px;
   position: absolute;
   left: 0;
   bottom: 0;

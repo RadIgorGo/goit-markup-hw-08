@@ -92,7 +92,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -572,11 +572,38 @@ body {
 
 .sub-title {
   text-align: center;
-  margin: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
 }
 
 .person-photo {
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .person-photo {
+    height: 622px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .person-photo {
+    height: 536px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .person-photo {
+    height: 428px;
+    width: 270px;
+  }
 }
 
 .table-color {
@@ -1381,9 +1408,15 @@ img {
   }
 }
 
+.list-image {
+  display: flex;
+  justify-content: space-between;
+}
+
 .photo-book {
   height: 386px;
-  width: 1170px;
+  width: 1200px;
+  margin-bottom: 94px;
   background-color: #ffffff;
 }
 
@@ -1394,12 +1427,20 @@ img {
 }
 
 .label-img {
+  display: flex;
   position: relative;
   z-index: 1;
+  margin: 0;
 }
 
 .label {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  width: 370px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1413,6 +1454,21 @@ img {
 
 .team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-clients {
