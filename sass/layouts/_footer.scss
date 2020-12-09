@@ -5,24 +5,43 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: $gray;
+  text-align: center;
+  position: relative;
+
   @media screen and (min-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
 }
 .our-address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    left: 76px;
+
+    position: absolute;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
 }
 .list {
   width: 232px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  display: inline-block;
   padding: 0px;
+  @media screen and (min-width: 0px) and (max-width: 1199px) {
+    width: 232px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 .cl-link {
-  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
 }

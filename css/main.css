@@ -666,10 +666,6 @@ body {
 }
 
 .bt-email {
-  margin-top: 36px;
-  margin-left: 12px;
-  margin-bottom: 0px;
-  display: flex;
   justify-content: center;
   text-align: center;
   color: #ffffff;
@@ -683,6 +679,27 @@ body {
 
 .bt-email:hover .send {
   fill: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .bt-email {
+    position: absolute;
+    bottom: 60px;
+    left: 291px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .bt-email {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bt-email {
+    margin-left: 12px;
+  }
 }
 
 .bt-main:hover {
@@ -1333,8 +1350,6 @@ body {
   color: #ffffff;
   text-decoration: none;
   height: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .link-address:hover, .link-address:focus {
@@ -1379,6 +1394,8 @@ body {
 }
 
 .logo {
+  display: block;
+  text-align: center;
   margin: 0px;
 }
 
@@ -1692,6 +1709,8 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #2f303a;
+  text-align: center;
+  position: relative;
 }
 
 @media screen and (min-width: 480px) {
@@ -1701,23 +1720,50 @@ img {
   }
 }
 
-.our-address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 463px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-address {
+    left: 76px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-address {
+    position: absolute;
+    top: 60px;
+    left: 15px;
+  }
 }
 
 .list {
   width: 232px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  display: inline-block;
   padding: 0px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+  .list {
+    width: 232px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    width: 231px;
+  }
+}
+
 .cl-link {
-  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .portfolio-button {
@@ -1730,6 +1776,7 @@ img {
 
 .our-contacts .little-name {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .call-us .pos-social {
@@ -1738,6 +1785,21 @@ img {
 
 .call-us .pos-social:hover, .call-us .pos-social:focus {
   background-color: #2196f3;
+}
+
+.call-us {
+  width: 206px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .our-contacts {
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    margin-right: 89px;
+  }
 }
 
 .flex-element {
@@ -1777,6 +1839,7 @@ img {
 
 .mailing .little-name {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .input-mailing {
@@ -1810,7 +1873,56 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .pos-mailing {
+    position: absolute;
+    bottom: 130px;
+    left: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pos-mailing {
+    position: absolute;
+    top: 72px;
+    right: 0px;
+  }
+}
+
 .send {
   fill: #ffffff;
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.mailing {
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .mailing {
+    margin-top: 60px;
+  }
+}
+
+.input-mailing {
+  height: 50px;
+  width: 450px;
+}
+
+@media screen and (max-width: 479px) {
+  .input-mailing {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-mailing {
+    width: 358px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

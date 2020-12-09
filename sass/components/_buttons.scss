@@ -35,10 +35,6 @@
 }
 
 .bt-email {
-  margin-top: 36px;
-  margin-left: 12px;
-  margin-bottom: 0px;
-  display: flex;
   justify-content: center;
   text-align: center;
   color: $white;
@@ -50,6 +46,19 @@
   }
   &:hover .send {
     fill: $accent-cl;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 60px;
+    left: 291px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 
