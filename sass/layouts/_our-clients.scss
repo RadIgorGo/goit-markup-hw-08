@@ -1,11 +1,61 @@
 .our-clients {
   background-color: $white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 93px;
+    padding-bottom: 93px;
+  }
 }
 
 .block-clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (min-width: 0px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+  }
+  // display: flex;
+  // justify-content: space-between;
 }
 .unit-clients {
+  display: flex;
+
   border: 1px solid $svg-smoke;
   box-sizing: border-box;
   border-radius: 4px;
+  height: 90px;
+  @media screen and (min-width: 0px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    margin-bottom: 30px;
+    &:nth-child(n + 5) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      margin-bottom: 0px;
+    }
+  }
 }
