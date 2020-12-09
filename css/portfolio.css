@@ -1007,7 +1007,6 @@ body {
 
 .person-photo {
   background-color: #ffffff;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -1022,12 +1021,18 @@ body {
     height: 536px;
     width: 354px;
   }
+  .person-photo:nth-child(2n) {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .person-photo {
     height: 428px;
     width: 270px;
+  }
+  .person-photo:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -1214,6 +1219,10 @@ img {
 @media screen and (min-width: 0px) {
   .unit-clients {
     width: 210px;
+    margin-bottom: 20px;
+  }
+  .unit-clients:last-child {
+    margin-bottom: 0px;
   }
 }
 
