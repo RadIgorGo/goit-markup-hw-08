@@ -1378,6 +1378,10 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  margin: 0px;
+}
+
 .bg-header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
@@ -1685,7 +1689,35 @@ img {
 }
 
 .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.our-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list {
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.cl-link {
+  text-align: center;
 }
 
 .portfolio-button {

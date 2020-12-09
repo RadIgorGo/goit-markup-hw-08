@@ -2,5 +2,27 @@
   background-color: $gray;
 }
 .footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $gray;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.our-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list {
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0px;
+}
+.cl-link {
+  text-align: center;
 }
