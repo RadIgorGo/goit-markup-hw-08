@@ -20,13 +20,15 @@
 }
 .list-app {
   padding-left: 0px;
-  // display: flex;
-  // justify-content: space-between;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: var(--smoke);
 }
 .person-photo {
   background-color: $white;
-  overflow: hidden;
+
   @media screen and (min-width: 480px) {
     height: 622px;
     width: 450px;

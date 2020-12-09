@@ -29,7 +29,7 @@ body {
   @media screen and (min-width: 0px) and (max-width: 479px) {
     @include fonts-title(18px, 700, 1.6154, 0.06em);
     width: auto;
-    padding-top: auto;
+    padding-top: 50px;
     margin: 0px;
   }
   @media screen and (min-width: 480px) {

@@ -342,7 +342,7 @@ body {
     line-height: 1.6154;
     letter-spacing: 0.06em;
     width: auto;
-    padding-top: auto;
+    padding-top: 50px;
     margin: 0px;
   }
 }
@@ -992,12 +992,15 @@ body {
 
 .list-app {
   padding-left: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: var(--smoke);
 }
 
 .person-photo {
   background-color: #ffffff;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {

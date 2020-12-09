@@ -342,7 +342,7 @@ body {
     line-height: 1.6154;
     letter-spacing: 0.06em;
     width: auto;
-    padding-top: auto;
+    padding-top: 50px;
     margin: 0px;
   }
 }
@@ -1009,12 +1009,15 @@ body {
 
 .list-app {
   padding-left: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: var(--smoke);
 }
 
 .person-photo {
   background-color: #ffffff;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -1041,13 +1044,26 @@ body {
 .person-photo {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px 4px 4px 4px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
+  .person-photo:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .person-photo {
+    margin-bottom: 0px;
+  }
+  .person-photo:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
-  .person-photo:last-child {
+}
+
+@media screen and (min-width: 1200px) {
+  .person-photo {
     margin-bottom: 0px;
   }
 }
@@ -1405,10 +1421,9 @@ img {
 }
 
 .bg-hero {
-  overflow: hidden;
   background-color: #2f303a;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
   background-size: auto auto;
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
@@ -1423,6 +1438,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .bg-hero {
+    background-position: 50% 40%;
+    background-size: auto auto;
+    background-size: cover;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-mobile/headerimg.jpg");
   }
 }
