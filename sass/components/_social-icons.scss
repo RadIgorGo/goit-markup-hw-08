@@ -27,10 +27,9 @@
   margin-bottom: 30px;
   background-color: $smoke;
   border-radius: 4px;
-  @media screen and (min-width: 0px) and (max-width: 479px) {
-    max-height: 80px;
-    max-width: 450px;
-  }
+  // @media screen and (min-width: 0px) and (max-width: 479px) {
+  //   height: inherit;
+  // }
   @media screen and (min-width: 480px) {
     height: 120px;
     width: 450px;
@@ -47,6 +46,10 @@
 .des-svg {
   height: 70px;
   width: 70px;
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 .instagram-svg,
 .twitter-svg,

@@ -27,9 +27,9 @@ body {
 
   text-transform: uppercase;
   @media screen and (min-width: 0px) and (max-width: 479px) {
-    @include fonts-title(18px, 700, 1.6154, 0.06em);
+    @include fonts-title(26px, 700, 1.6154, 0.06em);
     width: auto;
-    padding-top: auto;
+    padding-top: 20px;
     margin: 0px;
   }
   @media screen and (min-width: 480px) {
@@ -199,9 +199,11 @@ body {
 }
 .sub-title {
   text-align: center;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0px;

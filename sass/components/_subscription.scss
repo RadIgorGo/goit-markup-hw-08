@@ -1,5 +1,6 @@
 .mailing .little-name {
   color: $white;
+  margin-bottom: 20px;
 }
 .input-mailing {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -11,6 +12,7 @@
   line-height: 1.3636;
   letter-spacing: 0.06em;
   color: $white;
+
   &::placeholder {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -29,8 +31,46 @@
 
 .pos-mailing {
   display: block;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    bottom: 130px;
+    left: 166px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 86px;
+    width: 358px;
+    text-align: left;
+    margin-left: 299px;
+    margin-top: 12px;
+  }
 }
 
 .send {
   fill: $white;
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+  margin-left: 10px;
+  display: inline-block;
+}
+.mailing {
+  display: inline-block;
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+}
+.input-mailing {
+  height: 50px;
+  width: 450px;
+  padding-left: 16px;
+  @media screen and (max-width: 479px) {
+    width: 200px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }

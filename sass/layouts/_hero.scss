@@ -1,7 +1,7 @@
 .bg-hero {
   background-color: $gray;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 50%;
   background-size: auto auto;
   background-size: cover;
   background-image: linear-gradient(
@@ -21,6 +21,9 @@
       url("../images-mobile/headerimg.jpg");
   }
   @media screen and (min-width: 768px) {
+    background-position: 50% 40%;
+    background-size: auto auto;
+    background-size: cover;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
