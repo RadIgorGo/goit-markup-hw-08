@@ -37,9 +37,14 @@
     left: 166px;
   }
   @media screen and (min-width: 1200px) {
+    height: 86px;
+    width: 358px;
+    text-align: left;
     position: absolute;
     top: 72px;
-    right: 0px;
+    left: 615px;
+    // top: 72px;
+    // right: 200px;
   }
 }
 
@@ -59,15 +64,18 @@
   }
 
   @media screen and (min-width: 1200px) {
+    // position: relative;
   }
 }
 .input-mailing {
   height: 50px;
   width: 450px;
+  padding-left: 16px;
   @media screen and (max-width: 479px) {
     width: 200px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+    position: absolute;
   }
 }

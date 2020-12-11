@@ -337,12 +337,12 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
   .title {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.6154;
     letter-spacing: 0.06em;
     width: auto;
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 0px;
   }
 }
@@ -699,6 +699,8 @@ body {
 @media screen and (min-width: 1200px) {
   .bt-email {
     margin-left: 12px;
+    left: 973px;
+    top: 108px;
   }
 }
 
@@ -1035,6 +1037,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .list-app {
+    justify-content: center;
     align-items: center;
   }
 }
@@ -1633,13 +1636,13 @@ img {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 454px) {
   .block-clients {
-    width: 350px;
+    justify-content: center;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 455px) {
   .block-clients {
     width: 450px;
   }
@@ -1726,6 +1729,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .our-address {
     left: 76px;
@@ -1799,6 +1808,18 @@ img {
     right: 0;
     margin-top: 5px;
     margin-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-contacts {
+    height: 80px;
+    width: 206px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    top: 72px;
+    right: 663px;
   }
 }
 
@@ -1883,9 +1904,12 @@ img {
 
 @media screen and (min-width: 1200px) {
   .pos-mailing {
+    height: 86px;
+    width: 358px;
+    text-align: left;
     position: absolute;
     top: 72px;
-    right: 0px;
+    left: 615px;
   }
 }
 
@@ -1912,6 +1936,7 @@ img {
 .input-mailing {
   height: 50px;
   width: 450px;
+  padding-left: 16px;
 }
 
 @media screen and (max-width: 479px) {
@@ -1923,6 +1948,7 @@ img {
 @media screen and (min-width: 1200px) {
   .input-mailing {
     width: 358px;
+    position: absolute;
   }
 }
 /*# sourceMappingURL=main.css.map */
