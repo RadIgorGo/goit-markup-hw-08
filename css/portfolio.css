@@ -729,6 +729,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .bt-email {
+    margin-left: 12px;
+  }
+}
+
 .bt-main:hover {
   color: #2196f3;
   background-color: #ffffff;
