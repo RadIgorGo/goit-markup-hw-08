@@ -6,11 +6,12 @@
   height: auto;
   position: relative;
 }
-.list-nav,
-.up-contacts,
-.menu-header,
-.head-main {
-}
+// .list-nav,
+// .up-contacts,
+// .menu-header,
+// .head-main {
+
+// }
 .menu-button {
   display: inline-flex;
   margin: 0;
@@ -35,7 +36,7 @@
   width: 100%;
   height: 480px;
   background-color: violet;
-  &is-open {
+  &.is-open {
     display: block;
   }
 }

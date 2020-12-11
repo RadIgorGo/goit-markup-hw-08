@@ -1468,7 +1468,7 @@ body {
   background-color: violet;
 }
 
-.menu-containeris-open {
+.menu-container.is-open {
   display: block;
 }
 
