@@ -1161,14 +1161,7 @@ body {
 
 .head-main {
   height: auto;
-  align-items: center;
-}
-
-.list-nav,
-.up-contacts,
-.menu-header,
-.head-main {
-  display: flex;
+  position: relative;
 }
 
 .menu-button {
@@ -1183,12 +1176,26 @@ body {
   display: none;
 }
 
-.menu-button .is-open .mob-menu-close {
+.menu-button.is-open .mob-menu-close {
   display: block;
 }
 
-.menu-button .is-open .mob-menu-open {
+.menu-button.is-open .mob-menu-open {
   display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  background-color: violet;
+}
+
+.menu-containeris-open {
+  display: block;
 }
 
 .list,
