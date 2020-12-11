@@ -12,3 +12,19 @@
 .head-main {
   display: flex;
 }
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .mob-menu-close {
+  display: none;
+}
+.menu-button .is-open .mob-menu-close {
+  display: block;
+}
+.menu-button .is-open .mob-menu-open {
+  display: none;
+}

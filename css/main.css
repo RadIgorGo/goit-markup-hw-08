@@ -477,6 +477,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .des-svg,
@@ -1444,6 +1445,26 @@ body {
   display: flex;
 }
 
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .mob-menu-close {
+  display: none;
+}
+
+.menu-button .is-open .mob-menu-close {
+  display: block;
+}
+
+.menu-button .is-open .mob-menu-open {
+  display: none;
+}
+
 .list,
 .list-menu,
 .list-nav,
@@ -1924,6 +1945,7 @@ img {
 
 .flex-element {
   border: 1px solid #eeeeee;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
