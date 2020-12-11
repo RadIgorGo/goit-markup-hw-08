@@ -466,6 +466,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  padding-left: 24px;
 }
 
 .app-name {
@@ -475,6 +476,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-left: 24px;
 }
 
 .des-svg,
@@ -614,16 +616,6 @@ body {
   color: #ffffff;
 }
 
-.project-name {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-}
-
-.app-name {
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -750,6 +742,33 @@ body {
 
 .list-button + .list-button {
   margin-left: 8px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .list-button {
+    margin-bottom: 10px;
+  }
+  .list-button:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-button:nth-child(n + 4) {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-button {
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-button {
+    max-width: 1200px;
+  }
 }
 
 .bt-modal {
@@ -1159,6 +1178,44 @@ body {
   list-style: none;
 }
 
+.list-menu {
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .list-menu {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .list-menu {
+    width: 362px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-menu {
+    width: 612px;
+    margin-bottom: 30px;
+    margin-left: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-menu {
+    width: 612px;
+    margin-bottom: 30px;
+    margin-left: 280px;
+  }
+}
+
 img {
   display: block;
 }
@@ -1367,10 +1424,31 @@ img {
 
 .portfolio-button {
   background-color: #ffffff;
+  margin-bottom: 60px;
 }
 
 .table-app {
   background-color: #ffffff;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .table-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .table-app {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .our-contacts .little-name {
@@ -1417,7 +1495,49 @@ img {
 }
 
 .flex-element {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .flex-element {
+    margin-bottom: 20px;
+  }
+  .flex-element:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .flex-element {
+    height: 404px;
+    width: 450px;
+    margin-bottom: 30px;
+  }
+  .flex-element:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .flex-element {
+    height: 404px;
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  .flex-element:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-element {
+    height: 404px;
+    width: 370px;
+    margin-bottom: 30px;
+  }
+  .flex-element:nth-child(n + 7) {
+    margin-bottom: 0px;
+  }
 }
 
 .flex-element:hover,
@@ -1449,6 +1569,40 @@ img {
 .product:hover .overlay {
   opacity: 1;
   transform: translateY(-100%);
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .product:hover .overlay {
+    height: 100%;
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .product:hover .overlay {
+    height: 294px;
+    padding-top: 74px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .product:hover .overlay {
+    height: 294px;
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product:hover .overlay {
+    height: 294px;
+    padding-top: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .mailing .little-name {

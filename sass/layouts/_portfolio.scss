@@ -1,6 +1,21 @@
 .portfolio-button {
   background-color: $white;
+  margin-bottom: 60px;
 }
 .table-app {
   background-color: $white;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

@@ -5,3 +5,31 @@
 .table-app {
   list-style: none;
 }
+.list-menu {
+  padding: 0px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 0px) and (max-width: 479px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 362px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 612px;
+
+    margin-bottom: 30px;
+    margin-left: 64px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 612px;
+    margin-bottom: 30px;
+    margin-left: 280px;
+  }
+}

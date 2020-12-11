@@ -116,6 +116,7 @@ body {
   font-family: "Roboto", sans-serif;
   @include fonts-project-name(18px, 700, 2, 0.06em);
   color: $title-cl;
+  padding-left: 24px;
 }
 
 .app-name {
@@ -123,6 +124,7 @@ body {
   @include fonts-app-name(16px, 400, 1.87, 0.03em);
 
   color: $main-text-cl;
+  padding-left: 24px;
 }
 
 .des-svg,
@@ -232,10 +234,6 @@ body {
 }
 
 .project-name {
-  border-left: 1px solid#eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 .app-name {
-  border-left: 1px solid#eeeeee;
-  border-right: 1px solid #eeeeee;
 }
