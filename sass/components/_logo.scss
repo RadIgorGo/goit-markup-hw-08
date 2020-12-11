@@ -27,3 +27,12 @@
     text-align: left;
   }
 }
+.head-main .logo {
+  @media screen and (max-width: 767px) {
+    height: 28px;
+
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

@@ -5,6 +5,11 @@
 .head-main {
   height: auto;
   position: relative;
+  @media screen and (max-width: 767px) {
+    width: auto;
+    display: inline-flex;
+    justify-content: space-between;
+  }
 }
 // .list-nav,
 // .up-contacts,
@@ -12,31 +17,3 @@
 // .head-main {
 
 // }
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu-button .mob-menu-close {
-  display: none;
-}
-.menu-button.is-open .mob-menu-close {
-  display: block;
-}
-.menu-button.is-open .mob-menu-open {
-  display: none;
-}
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 480px;
-  background-color: violet;
-  &.is-open {
-    display: block;
-  }
-}
