@@ -31,7 +31,8 @@
 
 .pos-mailing {
   display: block;
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     position: absolute;
     bottom: 130px;
     left: 166px;
@@ -40,6 +41,7 @@
     height: 86px;
     width: 358px;
     text-align: left;
+
     position: absolute;
     top: 72px;
     left: 615px;
@@ -62,7 +64,6 @@
   @media screen and (max-width: 1199px) {
     margin-top: 60px;
   }
-
   @media screen and (min-width: 1200px) {
     // position: relative;
   }

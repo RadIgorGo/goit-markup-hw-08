@@ -22,4 +22,8 @@
   display: block;
   text-align: center;
   margin: 0px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

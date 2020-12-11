@@ -651,6 +651,12 @@ body {
   margin: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    text-align: left;
+  }
+}
+
 .bt-main,
 .bt-email,
 .bt-modal {
@@ -825,13 +831,6 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 479px) {
-  .bg-svg {
-    max-height: 80px;
-    max-width: 450px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .bg-svg {
     height: 120px;
@@ -856,6 +855,13 @@ body {
 .des-svg {
   height: 70px;
   width: 70px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .des-svg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .instagram-svg,
@@ -1217,6 +1223,9 @@ img {
 @media screen and (min-width: 455px) {
   .block-clients {
     width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -1240,9 +1249,9 @@ img {
   height: 90px;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
   .unit-clients {
-    width: 210px;
+    width: 100%;
     margin-bottom: 20px;
   }
   .unit-clients:last-child {
@@ -1307,6 +1316,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .mailing {
+    max-width: 1200px;
+    height: 86px;
+    width: 570px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .our-address {
     left: 76px;
@@ -1339,6 +1356,7 @@ img {
 @media screen and (min-width: 1200px) {
   .list {
     width: 231px;
+    text-align: left;
   }
 }
 
@@ -1385,6 +1403,9 @@ img {
 
 @media screen and (min-width: 1200px) {
   .our-contacts {
+    position: absolute;
+    left: 316px;
+    top: 72px;
     height: 80px;
     width: 206px;
     margin: 0px;
@@ -1466,7 +1487,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .pos-mailing {
     position: absolute;
     bottom: 130px;

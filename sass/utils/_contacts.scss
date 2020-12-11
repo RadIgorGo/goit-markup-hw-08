@@ -23,10 +23,15 @@
     margin-right: 89px;
   }
   @media screen and (min-width: 1200px) {
+    position: absolute;
+    left: 316px;
+    top: 72px;
+
     height: 80px;
     width: 206px;
     margin: 0px;
     padding: 0px;
+
     text-align: left;
     top: 72px;
     right: 663px;
