@@ -6,6 +6,8 @@
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
+
+  overflow-y: scroll;
 }
 .is-hidden {
   opacity: 0;
@@ -28,6 +30,11 @@
   background-color: $white;
 
   transition: $time-transition $timing-function;
+  @media screen and (max-width: 1199px) {
+    top: 45%;
+    height: 609px;
+    width: 450px;
+  }
 }
 
 .close:hover {
@@ -59,6 +66,14 @@
   margin-top: 40px;
 
   color: $title-cl;
+  @media screen and (max-width: 1199px) {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    height: 60px;
+    width: 370px;
+  }
 }
 .form-input {
   margin-left: 40px;
@@ -72,8 +87,7 @@
   margin-bottom: 10px;
   width: 448px;
   height: 40px;
-  width: 448px;
-  height: 40px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -82,6 +96,10 @@
   padding-left: 42px;
   padding-right: 16px;
   transition: $time-transition $timing-function;
+  @media screen and (max-width: 1199px) {
+    height: 40px;
+    width: 370px;
+  }
 }
 .comments {
   width: 448px;
@@ -97,6 +115,10 @@
   border-radius: 4px;
   resize: none;
   transition: $time-transition $timing-function;
+  @media screen and (max-width: 1199px) {
+    height: 120px;
+    width: 370px;
+  }
 }
 .comments::placeholder {
   font-family: "Roboto", sans-serif;
@@ -113,7 +135,10 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  padding-left: 12px;
+
+  @media screen and (max-width: 1199px) {
+    padding-left: 0px;
+  }
 }
 .contact-text {
   font-family: "Roboto", sans-serif;
@@ -123,6 +148,13 @@
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: $main-text-cl;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+
+    line-height: 1.1666;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
 }
 .link-contract {
   display: inline-block;

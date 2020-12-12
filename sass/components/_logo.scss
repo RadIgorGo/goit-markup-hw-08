@@ -3,6 +3,14 @@
   @include fonts-logo(26px, 700, 1.1738);
   font-style: normal;
   color: $accent-cl;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+
+    font-weight: 700;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
 }
 
 .part-logo1 {
@@ -29,10 +37,13 @@
 }
 .head-main .logo {
   @media screen and (max-width: 767px) {
-    height: 28px;
+    display: inline-block;
 
-    text-align: left;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    line-height: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    // text-align: left;
+    // display: inline-flex;
+    position: absolute;
   }
 }

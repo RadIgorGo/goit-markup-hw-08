@@ -19,10 +19,21 @@
   text-decoration: none;
   height: 16px;
   display: flex;
+  justify-content: center;
   align-items: center;
   &:hover,
   &:focus {
     color: $accent-cl;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    & + & {
+      margin-top: 16px;
+    }
   }
 }
 .link-address {
@@ -40,19 +51,25 @@
 }
 
 .default-page {
+  color: $accent-cl;
   &::after {
     content: "";
-
     position: absolute;
-    left: 0;
-    bottom: 0;
     display: block;
     width: 100%;
     height: 4px;
     background: $accent-cl;
     border-radius: 2px;
   }
-  color: $accent-cl;
+  @media screen and (max-width: 767px) {
+    max-width: 768px;
+    &::after {
+      content: "";
+      width: 63px;
+      left: 18px;
+      bottom: -10px;
+    }
+  }
 }
 .menu-button {
   display: inline-flex;
@@ -61,6 +78,12 @@
   border: none;
   background-color: transparent;
   outline: orangered;
+  @media screen and (max-width: 767px) {
+    &:hover,
+    &:focus {
+      fill: $accent-cl;
+    }
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -88,12 +111,22 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 393px;
+    height: 400px;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0px;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 738px;
   }
 }
 .mobile-menu {
   @media screen and (max-width: 767px) {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: auto;
   }
 }

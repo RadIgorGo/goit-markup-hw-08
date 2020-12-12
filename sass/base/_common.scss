@@ -11,7 +11,9 @@ body {
   @include fonts(15px, 1.7142, 0.03em);
   color: $main-text-cl;
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 .title {
   font-family: "Roboto", sans-serif;
   @include fonts-title(44px, 900, 1.6154, 0.06em);

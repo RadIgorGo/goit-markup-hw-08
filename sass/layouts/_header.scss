@@ -3,17 +3,24 @@
   border-bottom: 1px solid #ececec;
 }
 .head-main {
-  height: auto;
-  position: relative;
   @media screen and (max-width: 767px) {
-    width: auto;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    position: relative;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
-// .list-nav,
-// .up-contacts,
-// .menu-header,
-// .head-main {
 
-// }
+.up-contacts {
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    display: inline-block;
+    width: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+}

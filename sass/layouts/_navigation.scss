@@ -33,3 +33,33 @@
     margin-left: 280px;
   }
 }
+.list-nav {
+  padding-left: 0px;
+  display: inline-block;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0px;
+    // display: inline-flex;
+    // flex-direction: row;
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.link-menu {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    @include fonts-little(18px, 500, 1.1716, 0.02em);
+  }
+}
+.menu-header {
+  @media screen and (min-width: 768px) {
+    // position: relative;
+    margin-right: 84px;
+  }
+}

@@ -63,7 +63,9 @@
     top: 108px;
   }
 }
-
+.bt-main {
+  text-align: center;
+}
 .bt-main:hover {
   color: $accent-cl;
   background-color: $white;
@@ -108,6 +110,11 @@
   &:checked:focus {
     background-color: $white;
     color: $accent-cl;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: 125px;
+    margin-bottom: 40px;
   }
 }
 
