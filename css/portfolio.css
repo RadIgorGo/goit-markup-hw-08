@@ -1311,6 +1311,7 @@ body.modal-open {
 
 .menu-container.is-open {
   display: block;
+  border-top: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -1418,7 +1419,7 @@ body.modal-open {
   padding: 0px;
   margin-top: 60px;
   margin-bottom: 0px;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -1433,6 +1434,7 @@ body.modal-open {
   .list-menu {
     width: 362px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
 }
 

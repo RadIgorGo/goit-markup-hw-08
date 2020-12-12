@@ -142,6 +142,7 @@
   background-color: $white;
   &.is-open {
     display: block;
+    border-top: 1px solid #ececec;
     $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     $time-transition: 250ms;
   }
@@ -158,6 +159,7 @@
     z-index: 5;
     &.is-open {
       display: block;
+
       $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       $time-transition: 250ms;
     }

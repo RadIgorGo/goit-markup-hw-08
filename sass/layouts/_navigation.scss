@@ -10,7 +10,7 @@
   margin-top: 60px;
   margin-bottom: 0px;
 
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 
   @media screen and (min-width: 0px) and (max-width: 479px) {
@@ -20,6 +20,7 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 362px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 612px;
