@@ -111,10 +111,22 @@
     background-color: $white;
     color: $accent-cl;
   }
-  @media screen and (max-width: 1199px) {
+  // @media screen and (max-width: 1199px) {
+  //   margin-right: auto;
+  //   margin-left: 125px;
+  //   margin-bottom: 40px;
+  // }
+  @media screen and (min-width: 0px) and (max-width: 349px) {
+    margin-left: 50px;
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 479px) {
+    margin-left: 62px;
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     margin-right: auto;
     margin-left: 125px;
-    margin-bottom: 40px;
   }
 }
 

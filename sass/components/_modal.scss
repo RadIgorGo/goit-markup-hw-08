@@ -28,9 +28,18 @@
   width: 528px;
   border-radius: 4px;
   background-color: $white;
-
   transition: $time-transition $timing-function;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 0px) and (max-width: 349px) {
+    height: 570px;
+    width: 300px;
+    top: 40%;
+  }
+  @media screen and (min-width: 350px) and (max-width: 479px) {
+    height: 540px;
+    width: 325px;
+    top: 40%;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     top: 45%;
     height: 609px;
     width: 450px;
@@ -66,7 +75,13 @@
   margin-top: 40px;
 
   color: $title-cl;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 0px) and (max-width: 450px) {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 451px) and (max-width: 1199px) {
     margin-right: 40px;
     margin-left: 40px;
     margin-bottom: 12px;
@@ -96,7 +111,15 @@
   padding-left: 42px;
   padding-right: 16px;
   transition: $time-transition $timing-function;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 0px) and (max-width: 349px) {
+    width: 150px;
+    height: 40px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 479px) {
+    width: 250px;
+    height: 40px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     height: 40px;
     width: 370px;
   }
@@ -115,7 +138,15 @@
   border-radius: 4px;
   resize: none;
   transition: $time-transition $timing-function;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 0px) and (max-width: 349px) {
+    width: 150px;
+    height: 70px;
+  }
+  @media screen and (min-width: 350px) and (max-width: 479px) {
+    width: 250px;
+    height: 80px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     height: 120px;
     width: 370px;
   }
