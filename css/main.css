@@ -1186,7 +1186,8 @@ body.modal-open {
   .modal {
     height: 570px;
     width: 300px;
-    top: 40%;
+    top: 50%;
+    left: 50%;
   }
 }
 
@@ -1194,13 +1195,13 @@ body.modal-open {
   .modal {
     height: 540px;
     width: 325px;
-    top: 40%;
+    top: 50%;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
-    top: 45%;
+    top: 50%;
     height: 609px;
     width: 450px;
   }
@@ -1536,6 +1537,8 @@ body.modal-open {
 .default-page-index::after {
   content: "";
   position: absolute;
+  left: -1px;
+  bottom: -32px;
   display: block;
   width: 100%;
   height: 4px;
@@ -1543,7 +1546,7 @@ body.modal-open {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .default-page-index::after {
     content: "";
     width: 63px;
@@ -1556,7 +1559,6 @@ body.modal-open {
   .default-page-index::after {
     content: "";
     width: 49px;
-    left: -2px;
     bottom: -32px;
   }
 }
@@ -1568,26 +1570,29 @@ body.modal-open {
 .default-page-portfolio::after {
   content: "";
   position: absolute;
+  left: -2px;
+  bottom: -32px;
   display: block;
-  width: 100%;
+  width: 78px;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .default-page-portfolio::after {
     content: "";
-    width: 63px;
+    width: 99px;
     left: 18px;
     bottom: -10px;
+    left: -1px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .default-page-portfolio::after {
     content: "";
-    width: 49px;
+    width: 78px;
     left: -2px;
     bottom: -32px;
   }
@@ -1628,6 +1633,7 @@ body.modal-open {
 
 .menu-container {
   background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
@@ -1635,7 +1641,7 @@ body.modal-open {
 
 .menu-container.is-open {
   display: block;
-  border-top: 1px solid #ececec;
+  border: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -1803,6 +1809,7 @@ body.modal-open {
   margin-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: left;
 }
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
@@ -1816,7 +1823,6 @@ body.modal-open {
   .list-menu {
     width: 362px;
     margin-bottom: 40px;
-    flex-wrap: wrap;
   }
 }
 
