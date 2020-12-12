@@ -3,7 +3,7 @@
   @include fonts-logo(26px, 700, 1.1738);
   font-style: normal;
   color: $accent-cl;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     font-size: 24px;
 
     font-weight: 700;
@@ -35,15 +35,20 @@
     text-align: left;
   }
 }
+
 .head-main .logo {
   @media screen and (max-width: 767px) {
     display: inline-block;
 
     line-height: 60px;
   }
+
   @media screen and (min-width: 768px) {
     // text-align: left;
     // display: inline-flex;
     position: absolute;
+    // margin-top: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
   }
 }

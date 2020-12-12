@@ -630,7 +630,7 @@ body.modal-open {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
     font-weight: 700;
@@ -674,6 +674,8 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .head-main .logo {
     position: absolute;
+    margin-top: 26px;
+    margin-bottom: 26px;
   }
 }
 
@@ -1206,14 +1208,20 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .default-page {
-    max-width: 768px;
-  }
   .default-page::after {
     content: "";
     width: 63px;
     left: 18px;
     bottom: -10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .default-page::after {
+    content: "";
+    width: 49px;
+    left: -2px;
+    bottom: -32px;
   }
 }
 
@@ -1251,7 +1259,7 @@ body.modal-open {
 }
 
 .menu-container {
-  background-color: violet;
+  background-color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
@@ -1281,6 +1289,12 @@ body.modal-open {
     display: inline-flex;
     justify-content: flex-end;
     width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    width: 1170px;
   }
 }
 
@@ -1318,11 +1332,32 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .up-contacts {
     display: flex;
     flex-direction: column;
     margin-right: 0px;
+    margin-top: 21px;
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .up-contacts {
+    display: inline-flex;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link + .link {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link + .link {
+    margin-left: 32px;
   }
 }
 
@@ -1384,6 +1419,14 @@ body.modal-open {
     width: 294px;
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-nav {
+    margin-right: 305px;
   }
 }
 
@@ -1397,9 +1440,24 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .link-menu {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1716;
+    letter-spacing: 0.02em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-header {
     margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-header {
+    margin-right: 0px;
   }
 }
 

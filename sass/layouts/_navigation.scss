@@ -47,19 +47,33 @@
     width: 294px;
     display: flex;
     justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   @media screen and (min-width: 1200px) {
+    margin-right: 305px;
   }
+  // @media screen and (min-width: 1200px) {
+  //   & + & {
+  //     margin-left: 50px;
+  //   }
 }
+
 .link-menu {
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
     @include fonts-little(18px, 500, 1.1716, 0.02em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts-little(14px, 500, 1.1716, 0.02em);
   }
 }
 .menu-header {
   @media screen and (min-width: 768px) {
     // position: relative;
     margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
   }
 }
