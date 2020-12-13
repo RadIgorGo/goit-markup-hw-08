@@ -23,10 +23,6 @@
     &:last-child {
       margin-bottom: 0px;
     }
-    &:nth-child(2) {
-      // background-color: orange;
-      height: 440px;
-    }
   }
   @media screen and (min-width: 1200px) {
     height: 404px;
