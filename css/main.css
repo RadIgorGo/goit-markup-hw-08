@@ -92,7 +92,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -472,6 +472,12 @@ body.modal-open {
   color: #212121;
   padding-left: 24px;
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-name:nth-child(2) {
+    width: 306px;
+  }
 }
 
 .app-name {
@@ -2389,6 +2395,9 @@ img {
   }
   .flex-element:last-child {
     margin-bottom: 0px;
+  }
+  .flex-element:nth-child(2) {
+    height: 440px;
   }
 }
 
