@@ -50,18 +50,20 @@
   }
 }
 
-.default-page {
+.default-page-index {
   color: $accent-cl;
   &::after {
     content: "";
     position: absolute;
+    left: -1px;
+    bottom: -32px;
     display: block;
     width: 100%;
     height: 4px;
     background: $accent-cl;
     border-radius: 2px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 0px) and (max-width: 767px) {
     &::after {
       content: "";
       width: 63px;
@@ -73,6 +75,36 @@
     &::after {
       content: "";
       width: 49px;
+      bottom: -32px;
+    }
+  }
+}
+.default-page-portfolio {
+  color: $accent-cl;
+  &::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    bottom: -32px;
+    display: block;
+    width: 78px;
+    height: 4px;
+    background: $accent-cl;
+    border-radius: 2px;
+  }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    &::after {
+      content: "";
+      width: 99px;
+      left: 18px;
+      bottom: -10px;
+      left: -1px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &::after {
+      content: "";
+      width: 78px;
       left: -2px;
       bottom: -32px;
     }
@@ -89,6 +121,8 @@
     &:hover,
     &:focus {
       fill: $accent-cl;
+      $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      $time-transition: 250ms;
     }
   }
   @media screen and (min-width: 768px) {
@@ -106,8 +140,11 @@
 }
 .menu-container {
   background-color: $white;
+  transition: $time-transition $timing-function;
   &.is-open {
     display: block;
+
+    border: 1px solid #ececec;
   }
   padding-top: 60px;
   padding-bottom: 60px;
@@ -119,6 +156,7 @@
     left: 0;
     width: 100%;
     height: 400px;
+    z-index: 5;
     &.is-open {
       display: block;
     }

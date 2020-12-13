@@ -9,7 +9,6 @@
   <body>
     <header class="bg-header">
       <div class="container head-main">
-       
         <a href="./index.html" class="link-logo">
           <p class="logo">Web<span class="part-logo1">Studio</span></p>
         </a>
@@ -23,7 +22,7 @@
     <div class="menu-container" id="menu-container" data-menu>
       <nav class="menu-header">
           <ul class="list-nav">
-            <li class="nav-item"><a href="./index.html" class="link-menu"> <span class="default-page">Студия</span></a></li>
+            <li class="nav-item"><a href="./index.html" class="link-menu"> <span class="default-page-index">Студия</span></a></li>
             <li class="nav-item"><a href="./portfolio.html" class="link-menu"> Портфолио</a></li>
             <li class="nav-item"><a href="#contacts" class="link-menu"> Контакты</a></li>
           </ul>
@@ -86,9 +85,21 @@
         <div class="container photo-book">
         <h2 class="sub-title">Чем мы занимаемся</h2>
           <div class="list-image">
-            <p class="label-img"><img  src="./images/img1.jpg" width="370" alt="Набор текста" /> <span class="label">Десктопные приложения</span></p>
-            <p class="label-img"><img  src="./images/img2.jpg" width="370" alt="Лептоп" /> <span class="label">Мобильные приложения</span></p>
-            <p class="label-img"><img  src="./images/img3.jpg" width="370" alt="Планшет" /> <span class="label">Дизайнерские решения</span></p>
+            <p class="label-img"><picture>
+               <source srcset="/images/desktop-image/job@.webp 1x, /images/desktop-image/job@2.webp 2x," type="image/webp"> 
+                <img  srcset="/images/desktop-image/job@.png 1x, /images/desktop-image/job@2.png 2x" src="/images/desktop-image/job@.jpg 1x, /images/desktop-image/job@2.jpg 2x" width="370" alt="Набор текста" />
+              </picture> <span class="label">Десктопные приложения</span></p>
+
+              <p class="label-img"><picture>
+                 <source srcset="/images/desktop-image/job2@.webp 1x, /images/desktop-image/job2@2.webp 2x," type="image/webp">
+                  
+                  <img  srcset="/images/desktop-image/job2@.png 1x, /images/desktop-image/job2@2.png 2x" src="/images/desktop-image/job2@.jpg 1x, /images/desktop-image/job2@2.jpg 2x"  width="370" alt="Лептоп" />
+                </picture> <span class="label">Мобильные приложения</span></p>
+            <p class="label-img"><picture>
+               <source srcset="/images/desktop-image/job3@.webp 1x, /images/desktop-image/job3@2.webp 2x," type="image/webp">
+                
+                <img  srcset="/images/desktop-image/job3@.png 1x, /images/desktop-image/job3@2.png 2x" src="/images/desktop-image/job3@.jpg 1x, /images/desktop-image/job3@2.jpg 2x"  width="370" alt="Планшет" />
+              </picture> <span class="label">Дизайнерские решения</span></p>
           </div>
       </div>
       </section>
@@ -97,7 +108,35 @@
         <h3 id="our_team" class="sub-title">Наша команда</h3>
         <ul class="list-app">
             <li class="person-photo">
-              <img src="./images/img4.jpg" width="270" alt="Игорь Демьяненко фото"/>
+            <picture>
+                  <source srcset="
+                                                        /images/mobile-image/team1@.webp,
+                                                        /images/mobile-image/team1@2.webp 2x
+                                                      " type="image/webp" media="(max-width: 767px)" />
+                  <source srcset="
+                                                        /images/table-image/team1@.webp,
+                                                        /images/table-image/team1@2.webp 2x
+                                                        " type="image/webp" media="(max-width: 1199px)" />
+                  <source srcset="
+                                                        /images/desktop-image/team1@.webp,
+                                                       /images/desktop-image/team1@2.webp 2x
+                                                       " type="image/webp" media="(min-width: 1200px)" />
+                  <source srcset="
+                                                        /images/mobile-image/team1@.png,
+                                                        /images/mobile-image/team1@2.png 2x
+                                                      " type="image/png" media="(max-width: 767px)" />
+                  <source srcset="
+                                                        /images/table-image/team1@.png,
+                                                        /images/table-image/team1@2.png 2x
+                                                                          " type="image/png" media="(max-width: 1199px)" />
+                  <source srcset="
+                                                        /images/desktop-image/team1@.png,
+                                                      /images/desktop-image/team1@2.png 2x
+                                                      " type="image/png" media="(min-width: 1200px)" />
+                  <source srcset="/images/desktop-image/team1@2.jpg 2x" media="(min-width: 1200px)" />
+                <img src="/images/desktop-image/team1@.jpg" width="270" alt="Игорь Демьяненко фото"/>
+              
+              </picture>
               <p class="styles-name">Игорь Демьяненко</p>
               <p class="name-prof">Product Designer</p>
 
@@ -131,7 +170,36 @@
             </li>
 
             <li class="person-photo">
-              <img src="./images/img5.jpg" width="270" alt="Ольга Репина фото"/> 
+              <picture>
+                <source srcset="
+                                                                      /images/mobile-image/team2@.webp,
+                                                                      /images/mobile-image/team2@2.webp 2x
+                                                                    " type="image/webp" media="(max-width: 767px)" />
+                <source srcset="
+                                                                      /images/table-image/team2@.webp,
+                                                                      /images/table-image/team2@2.webp 2x
+                                                                      " type="image/webp" media="(max-width: 1199px)" />
+                <source srcset="
+                                                                      /images/desktop-image/team2@.webp,
+                                                                     /images/desktop-image/team2@2.webp 2x
+                                                                     " type="image/webp" media="(min-width: 1200px)" />
+                <source srcset="
+                                                                      /images/mobile-image/team2@.png,
+                                                                      /images/mobile-image/team2@2.png 2x
+                                                                    " type="image/png" media="(max-width: 767px)" />
+                <source srcset="
+                                                                      /images/table-image/team2@.png,
+                                                                      /images/table-image/team2@2.png 2x
+                                                                    " type="image/png" media="(max-width: 1199px)" />
+                <source srcset="
+                                                                      /images/desktop-image/team2@.png,
+                                                                    /images/desktop-image/team2@2.png 2x
+                                                                    " type="image/png" media="(min-width: 1200px)" />
+                <source srcset="/images/desktop-image/team2@2.jpg 2x" media="(min-width: 1200px)" />
+                <img src="/images/desktop-image/team2@.jpg" width="270" alt="Ольга Репина фото" />
+              
+              </picture>
+              
               <p class="styles-name">Ольга Репина</p>
               <p class="name-prof">Frontend Developer</p>
 
@@ -165,7 +233,37 @@
             </li>
 
             <li class="person-photo">
-              <img src="./images/img6.jpg" width="270" alt="Николай Тарасов фото"/>
+              <picture>
+                <source srcset="
+                                                                                    /images/mobile-image/team3@.webp,
+                                                                                    /images/mobile-image/team3@2.webp 2x
+                                                                                  " type="image/webp" media="(max-width: 767px)" />
+                <source srcset="
+                                                                                    /images/table-image/team3@.webp,
+                                                                                    /images/table-image/team3@2.webp 2x
+                                                                                    " type="image/webp"
+                  media="(max-width: 1199px)" />
+                <source srcset="
+                                                                                    /images/desktop-image/team3@.webp,
+                                                                                   /images/desktop-image/team3@2.webp 2x
+                                                                                   " type="image/webp" media="(min-width: 1200px)" />
+                <source srcset="
+                                                                                    /images/mobile-image/team3@.png,
+                                                                                    /images/mobile-image/team3@2.png 2x
+                                                                                  " type="image/png" media="(max-width: 767px)" />
+                <source srcset="
+                                                                                    /images/table-image/team3@.png,
+                                                                                    /images/table-image/team3@2.png 2x
+                                                                                  " type="image/png" media="(max-width: 1199px)" />
+                <source srcset="
+                                                                                    /images/desktop-image/team3@.png,
+                                                                                  /images/desktop-image/team3@2.png 2x
+                                                                                  " type="image/png" media="(min-width: 1200px)" />
+                <source srcset="/images/desktop-image/team3@2.jpg 2x" media="(min-width: 1200px)" />
+                <img src="/images/desktop-image/team3@.jpg" width="270" alt="Николай Тарасов фото"/>
+              
+              </picture>
+              <!-- <img src="./images/img6.jpg" width="270" alt="Николай Тарасов фото"/> -->
               <p class="styles-name">Николай Тарасов</p>
               <p class="name-prof">Marketing</p>
 
@@ -199,7 +297,42 @@
             </li>
 
               <li class="person-photo">
-                <img src="./images/img7.jpg" width="270" alt="Михаил Ермаков фото"/>
+                <picture>
+                  <source srcset="
+                                                                                                    /images/mobile-image/team4@.webp,
+                                                                                                    /images/mobile-image/team4@2.webp 2x
+                                                                                                  " type="image/webp"
+                    media="(max-width: 767px)" />
+                  <source srcset="
+                                                                                                    /images/table-image/team4@.webp,
+                                                                                                    /images/table-image/team4@2.webp 2x
+                                                                                                    " type="image/webp"
+                    media="(max-width: 1199px)" />
+                  <source srcset="
+                                                                                                    /images/desktop-image/team4@.webp,
+                                                                                                   /images/desktop-image/team4@2.webp 2x
+                                                                                                   " type="image/webp"
+                    media="(min-width: 1200px)" />
+                  <source srcset="
+                                                                                                    /images/mobile-image/team4@.png,
+                                                                                                    /images/mobile-image/team4@2.png 2x
+                                                                                                  " type="image/png"
+                    media="(max-width: 767px)" />
+                  <source srcset="
+                                                                                                    /images/table-image/team4@.png,
+                                                                                                    /images/table-image/team4@2.png 2x
+                                                                                                  " type="image/png"
+                    media="(max-width: 1199px)" />
+                  <source srcset="
+                                                                                                    /images/desktop-image/team4@.png,
+                                                                                                  /images/desktop-image/team4@2.png 2x
+                                                                                                  " type="image/png"
+                    media="(min-width: 1200px)" />
+                  <source srcset="/images/desktop-image/team4@2.jpg 2x" media="(min-width: 1200px)" />
+                  <img src="/images/desktop-image/team4@.jpg" width="270" alt="Михаил Ермаков фото"/>
+                
+                </picture>
+                <!-- <img src="./images/img7.jpg" width="270" alt="Михаил Ермаков фото"/> -->
                 <p class="styles-name">Михаил Ермаков</p>
                 <p class="name-prof">UI Designer</p>
                 <div class="social-group">
