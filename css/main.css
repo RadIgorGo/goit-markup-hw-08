@@ -92,7 +92,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -472,12 +472,6 @@ body.modal-open {
   color: #212121;
   padding-left: 24px;
   margin-bottom: 0px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-name:nth-child(2) {
-    width: 306px;
-  }
 }
 
 .app-name {
@@ -1952,36 +1946,36 @@ img {
   background-position: 50% 50%;
   background-size: auto auto;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/mobile-image/header@.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-image/header@.jpg");
 }
 
 @media (min-resolution: 2dppx) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/mobile-image/header@2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-image/header@2.jpg");
   }
 }
 
 @media (min-width: 480px) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/table-image/header@.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table-image/header@.jpg");
   }
 }
 
 @media (min-width: 480px) and (min-resolution: 2dppx) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/table-image/header@2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table-image/header@2.jpg");
   }
 }
 
 @media (min-width: 768px) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/desktop-image/header@.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop-image/header@.jpg");
   }
 }
 
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .bg-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("..//images/desktop-image/header@2.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop-image/header@2.jpg");
   }
 }
 
@@ -2395,9 +2389,6 @@ img {
   }
   .flex-element:last-child {
     margin-bottom: 0px;
-  }
-  .flex-element:nth-child(2) {
-    height: 440px;
   }
 }
 
