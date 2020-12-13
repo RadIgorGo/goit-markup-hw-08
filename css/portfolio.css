@@ -471,6 +471,7 @@ body.modal-open {
   letter-spacing: 0.06em;
   color: #212121;
   padding-left: 24px;
+  margin-bottom: 0px;
 }
 
 .app-name {
@@ -482,6 +483,14 @@ body.modal-open {
   color: #757575;
   padding-left: 24px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 0px) {
+  .app-name {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+  }
 }
 
 .des-svg,
@@ -1799,7 +1808,6 @@ img {
 
 .flex-element {
   border: 1px solid #eeeeee;
-  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 479px) {

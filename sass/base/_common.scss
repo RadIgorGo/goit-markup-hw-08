@@ -119,6 +119,8 @@ body.modal-open {
   @include fonts-project-name(18px, 700, 2, 0.06em);
   color: $title-cl;
   padding-left: 24px;
+
+  margin-bottom: 0px;
 }
 
 .app-name {
@@ -128,6 +130,11 @@ body.modal-open {
   color: $main-text-cl;
   padding-left: 24px;
   padding-bottom: 20px;
+  @media screen and (min-width: 0px) {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+  }
 }
 
 .des-svg,
