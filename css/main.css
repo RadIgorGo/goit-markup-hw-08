@@ -733,6 +733,9 @@ body.modal-open {
   .list-button:nth-child(n + 4) {
     margin-top: 15px;
   }
+  .list-button:nth-child(4) {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1898,7 +1901,7 @@ body.modal-open {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -1934,22 +1937,36 @@ img {
   background-position: 50% 50%;
   background-size: auto auto;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-image/header@.jpg");
 }
 
-@media screen and (min-width: 480px) {
+@media (min-resolution: 2dppx) {
   .bg-hero {
-    background-position: 0% 0%;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-mobile/headerimg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-image/header@2.jpg");
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 480px) {
   .bg-hero {
-    background-position: 50% 40%;
-    background-size: auto auto;
-    background-size: cover;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images-mobile/headerimg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table-image/header@.jpg");
+  }
+}
+
+@media (min-width: 480px) and (min-resolution: 2dppx) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/table-image/header@2.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop-image/header@.jpg");
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+  .bg-hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop-image/header@2.jpg");
   }
 }
 
